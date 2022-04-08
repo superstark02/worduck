@@ -1,0 +1,845 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Brown Box - Team buying platform</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/2040a5bfae.js" crossorigin="anonymous"></script>
+
+    <!-- Place favicon.ico in the root directory -->
+    <link href="https://demo.hasthemes.com/nelson-preview/nelson/assets/images/favicon.ico" type="img/x-icon"
+        rel="shortcut icon">
+    <!-- All css files are included here. -->
+
+    <link rel="stylesheet" href="./assets/css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/vendor/iconfont.min.css">
+    <link rel="stylesheet" href="./assets/css/vendor/helper.css">
+    <link rel="stylesheet" href="./assets/css/plugins/plugins.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <!-- Modernizr JS -->
+    <script src="https://demo.hasthemes.com/nelson-preview/nelson/assets/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+
+<body>
+
+    <div id="main-wrapper" onmousemove="showCoords(event)" onmouseout="clearCoor()" onload="" class="ng-view">
+
+        <!--Header section start-->
+        <header class="header header-transparent header-sticky  d-lg-block d-none">
+            <div class="header-deafult-area">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-xl-3 col-lg-2 col-md-4 col-12">
+                            <!--Logo Area Start-->
+                            <div class="logo-area">
+                                <a href="index.html" class="font-a">brownbox.</a>
+                            </div>
+                            <!--Logo Area End-->
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-4 d-none d-lg-block col-12">
+                            <!--Header Menu Area Start-->
+                            <div class="header-menu-area text-center">
+                                <nav class="main-menu">
+                                    <ul>
+                                        <li><a href="/">Home</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="/display/Products/1pow">Product Of The Week</a></li>
+                                                <li><a href="#upcoming-products">Upcoming Products</a></li>
+                                                <li><a href="#next-product">Next Week's Product</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a>About Us</a>
+                                            <ul class="mega-menu four-column left-0">
+                                                <li><a href="/about" class="item-link">About Us</a>
+                                                    <ul>
+                                                        <li><a href="/about">About Us</a></li>
+                                                        <li><a href="/faq">FAQs</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="#" class="item-link">How We Work</a>
+                                                    <ul>
+                                                        <li><a href="/how-we-work">How We Work</a></li>
+                                                        <li><a href="/how-we-work/#warranty">Warranty/Garauntee</a></li>
+                                                        <li><a href="/how-we-work/#cancellation">cancellation</a></li>
+                                                        <li><a href="/how-we-work/#shipping">Shipping</a></li>
+                                                        <li><a href="/how-we-work/#refunds">Refunds</a></li>
+                                                        <li><a href="/how-we-work/#retun">Returns</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="#" class="item-link">How Such Low Rates?</a>
+                                                    <ul>
+                                                        <li><a href="/basically-the-idea">Know Here</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="/contact">Contact</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="/contact">Cancel Order</a></li>
+                                                <li><a href="/contact">Support</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <!--Header Menu Area End-->
+
+                        <div class="col-xl-3 col-lg-4 col-md-5 col-12">
+                            <!--Header Search And Mini Cart Area Start-->
+                            <div class="header-search-cart-area">
+                                <ul>
+                                    <li class="currency-menu"><a href="my-account.html">
+                                            <div class="btn">Login</div>
+                                        </a></li>
+                                </ul>
+                            </div>
+                            <!--Header Search And Mini Cart Area End-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--Header section end-->
+
+        <!--Header Mobile section start-->
+        <header class="header-mobile d-block d-lg-none">
+            <div class="header-bottom menu-right">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="header-mobile-navigation d-block d-lg-none">
+                                <div class="row align-items-center">
+                                    <div class="col-6 col-md-6">
+                                        <div class="header-logo">
+                                            <a href="home.html">
+                                                <a href="home.html" style="font-size: 18px;" class="font-a">Brown
+                                                    Box.</a>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-6">
+                                        <div class="mobile-navigation text-right">
+                                            <div class="header-icon-wrapper">
+                                                <ul class="icon-list justify-content-end">
+                                                    <li>
+                                                        <a href="javascript:void(0)" class="mobile-menu-icon"
+                                                            id="mobile-menu-trigger"><i class="fa fa-bars"></i></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Mobile Menu start-->
+                    <div class="row">
+                        <div class="col-12 d-flex d-lg-none">
+                            <div class="mobile-menu"></div>
+                        </div>
+                    </div>
+                    <!--Mobile Menu end-->
+
+                </div>
+            </div>
+        </header>
+        <!--Header Mobile section end-->
+
+        <!-- Offcanvas Menu Start -->
+        <div class="offcanvas-mobile-menu d-block d-lg-none" id="offcanvas-mobile-menu">
+            <a href="javascript:void(0)" class="offcanvas-menu-close" id="offcanvas-menu-close-trigger">
+                <i class="fa fa-times"></i>
+            </a>
+
+            <div class="offcanvas-wrapper">
+
+                <div class="offcanvas-inner-content">
+                    <nav class="offcanvas-navigation">
+                        <ul>
+                            <li><a href="my-account.html">Login</a></li>
+                            <li class="menu-item-has-children"><a href="#">Home</a>
+                                <ul class="submenu2">
+                                    <li><a href="/display/Products/1pow">Product Of The Week</a></li>
+                                    <li><a href="#upcoming-products">Upcoming Products</a></li>
+                                    <li><a href="#next-product">Next Week's Product</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item-has-children"><a href="#">Brown Box</a>
+                                <ul class="submenu2">
+                                    <li class="menu-item-has-children"><a href="#">Pages</a>
+                                        <ul class="submenu2">
+                                            <li><a href="/about">About Us</a></li>
+                                            <li><a href="/faq">FAQs</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item-has-children"><a href="#">How We Work</a>
+                                        <ul class="submenu2">
+                                            <li><a href="/how-we-work">How We Work</a></li>
+                                            <li><a href="/how-we-work/#warranty">Warranty/Garauntee</a></li>
+                                            <li><a href="/how-we-work/#cancellation">cancellation</a></li>
+                                            <li><a href="/how-we-work/#shipping">Shipping</a></li>
+                                            <li><a href="/how-we-work/#refunds">Refunds</a></li>
+                                            <li><a href="/how-we-work/#retun">Returns</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item-has-children"><a href="#">How Such Low Rates?</a>
+                                        <ul class="submenu2">
+                                            <li><a href="/basically-the-idea">Know Here</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-item-has-children"><a href="#">Contact</a>
+                                <ul class="submenu2">
+                                    <li><a href="/contact">Cancel Order</a></li>
+                                    <li><a href="/contact">Support</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+        </div>
+        <!-- Offcanvas Menu End -->
+
+        <!--slider section start-->
+        <div class="hero-section section position-relative" style="height: 70vh;">
+            <div class="hero-slider section">
+
+                <!--Hero Item start-->
+                <div class="hero-item  bg-image" style="height: 70vh;"
+                    data-bg="https://g.foolcdn.com/image/?url=https%3A//g.foolcdn.com/editorial/images/593627/gettyimages-1185938530.jpg&w=2000&op=resize">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+
+                                <!--Hero Content start-->
+                                <div class="hero-content-2 center">
+
+                                    <h2>Creative Design <br> Modern & Exclusive Furniture</h2>
+                                    <a href="shop.html" class="btn">SHOP NOW</a>
+
+                                </div>
+                                <!--Hero Content end-->
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Hero Item end-->
+
+                <!--Hero Item start-->
+                <div class="hero-item bg-image" style="height: 70vh;"
+                    data-bg="https://demo.hasthemes.com/nelson-preview/nelson/assets/images/hero/hero-2.jpg">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+
+                                <!--Hero Content start-->
+                                <div class="hero-content-2 center">
+
+                                    <h2>Creative Design <br> Modern & Exclusive Furniture</h2>
+                                    <a href="shop.html" class="btn">SHOP NOW</a>
+
+                                </div>
+                                <!--Hero Content end-->
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Hero Item end-->
+
+            </div>
+        </div>
+        <!--slider section end-->
+
+        <!-- Banner section start -->
+        <div class="banner-section section pt-30">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12"  >
+                        <!-- Single Banner Start -->
+                        <div class="single-banner-item mb-30" >
+                            <div class="banner-image">
+                                <a href="shop.html">
+                                    <img src="https://demo.hasthemes.com/nelson-preview/nelson/assets/images/banner/banner1.jpg"
+                                        alt="">
+                                </a>
+                            </div>
+                            <div class="banner-content">
+                                <h3 class="title">OFFICE <br> FURNITURE</h3>
+                                <a href="shop.html">SHOP NOW</a>
+                            </div>
+                        </div>
+                        <!-- Single Banner End -->
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <!-- Single Banner Start -->
+                        <div class="single-banner-item mb-30">
+                            <div class="banner-image">
+                                <a href="shop-left-sidebar.html">
+                                    <img src="https://demo.hasthemes.com/nelson-preview/nelson/assets/images/banner/banner2.jpg"
+                                        alt="">
+                                </a>
+                            </div>
+                            <div class="banner-content tr-right">
+                                <h3 class="title">HOME <br> FURNITURE</h3>
+                                <a href="shop.html">SHOP NOW</a>
+                            </div>
+                        </div>
+                        <!-- Single Banner End -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Banner section End -->
+
+
+
+
+        <!--Product section start-->
+        <div
+            class="product-section section pt-70 pt-lg-50 pt-md-40 pt-sm-30 pt-xs-20 pb-55 pb-lg-35 pb-md-25 pb-sm-15 pb-xs-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="section-title text-center mb-15" id="banner">
+                            <h2>Popular Furniture</h2>
+                        </div>
+                        <div class="product-tab mb-50 mb-sm-30 mb-xs-20">
+                            <ul class="nav">
+                                <li><a class="active show" data-toggle="tab" href="#home">HOME</a></li>
+                                <li><a data-toggle="tab" href="#office">OFFICE</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content">
+                    <div id="home" class="tab-pane fade active show">
+                        <div class="row" id="product">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Product section end-->
+
+
+    <!-- Banner section start -->
+    <div class="banner-section section pb-40 pb-sm-30 pb-xs-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- Single Banner Start -->
+                    <div class="single-banner-item pt-100 pt-md-80 pt-sm-70 pt-xs-50 pb-120 pb-md-100 pb-sm-90 pb-xs-50 mb-30 bg-image"
+                        data-bg="https://demo.hasthemes.com/nelson-preview/nelson/assets/images/banner/banner3.jpg">
+                        <div class="sp-banner-content">
+                            <span class="normat-text">DISCOUNTED UP TO 50%</span>
+                            <h2 class="title">Zigzag King Chair</h2>
+                            <span class="normat-text">LIMITED TIME OFEER</span>
+                            <div class="countdown-area">
+                                <div class="product-countdown" data-countdown="2019/06/01"></div>
+                            </div>
+                            <a href="shop.html">SHOP NOW</a>
+                        </div>
+                    </div>
+                    <!-- Single Banner End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Banner section End -->
+
+
+
+
+    <!--Features section start-->
+    <div class="features-section section pt-30 pt-lg-15 pt-md-0 pt-sm-0 pt-xs-15">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-feature mb-30">
+                        <div class="feature-image">
+                            <img src="https://img.icons8.com/ios/50/000000/controller.png" class="img-fluid" alt="" />
+                        </div>
+                        <div class="feature-content">
+                            <h4 class="title">New Product Every Week</h4>
+                            <p class="short-desc">We post one <b>product</b> every week. Products are cool gaming or
+                                mobile accessories.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-feature mb-30">
+                        <div class="feature-image">
+                            <img src="https://img.icons8.com/ios/50/000000/discount--v1.png" class="img-fluid" alt="" />
+                        </div>
+                        <div class="feature-content">
+                            <h4 class="title">Heavy Discounts</h4>
+                            <p class="short-desc">Since 100+ users buy a product together. You get the product in
+                                wholesale rates</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-feature mb-30">
+                        <div class="feature-image">
+                            <img src="https://demo.hasthemes.com/nelson-preview/nelson/assets/images/icons/feature-3.png"
+                                class="img-fluid" alt="" />
+                        </div>
+                        <div class="feature-content">
+                            <h4 class="title">Instant Refunds</h4>
+                            <p class="short-desc">
+                                If buyers are less than 30, we do not ship the product and refund your money
+                                instantly.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--Features section end-->
+
+
+
+    <!--Blog section start-->
+    <div
+        class="blog-section section pt-65 pt-lg-45 pt-md-35 pt-sm-20 pt-xs-15 pb-65 pb-lg-45 pb-md-35 pb-sm-25 pb-xs-15">
+        <div class="container">
+
+            <div class="row mb-50 mb-xs-20">
+                <div class="col">
+                    <div class="section-title text-center">
+                        <h2>Latest Post From Blog</h2>
+                        <span>OUR BLOG POST</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="blog col-lg-4 col-md-6">
+                    <div class="blog-inner mb-30">
+                        <div class="blog-media"><a href="blog-details.html" class="image"><img
+                                    src="https://demo.hasthemes.com/nelson-preview/nelson/assets/images/blog/blog-1.jpg"
+                                    alt=""></a></div>
+                        <div class="content">
+                            <ul class="meta">
+                                <li>08 April, 2019</li>
+                                <li><a href="#">25 Likes</a></li>
+                                <li><a href="#">28 Views</a></li>
+                            </ul>
+                            <h3 class="title"><a href="blog-details.html">Latest Fashion Trend for Women
+                                    new trens, new fashion</a></h3>
+                            <a class="read-more" href="blog-details.html">Read more</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="blog col-lg-4 col-md-6">
+                    <div class="blog-inner mb-30">
+                        <div class="blog-media"><a href="blog-details.html" class="image"><img
+                                    src="https://demo.hasthemes.com/nelson-preview/nelson/assets/images/blog/blog-2.jpg"
+                                    alt=""></a></div>
+                        <div class="content">
+                            <ul class="meta">
+                                <li>06 April, 2019</li>
+                                <li><a href="#">42 Likes</a></li>
+                                <li><a href="#">18 Views</a></li>
+                            </ul>
+                            <h3 class="title"><a href="blog-details.html">Latest Fashion Trend for Women
+                                    new trens, new fashion</a></h3>
+                            <a class="read-more" href="blog-details.html">Read more</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="blog col-lg-4 col-md-6">
+                    <div class="blog-inner mb-30">
+                        <div class="blog-media"><a href="blog-details.html" class="image"><img
+                                    src="https://demo.hasthemes.com/nelson-preview/nelson/assets/images/blog/blog-3.jpg"
+                                    alt=""></a></div>
+                        <div class="content">
+                            <ul class="meta">
+                                <li>02 April, 2019</li>
+                                <li><a href="#">20 Likes</a></li>
+                                <li><a href="#">78 Views</a></li>
+                            </ul>
+                            <h3 class="title"><a href="blog-details.html">Latest Fashion Trend for Women
+                                    new trens, new fashion</a></h3>
+                            <a class="read-more" href="blog-details.html">Read more</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!--Blog section end-->
+
+
+    <!-- Testimonial Area Start -->
+    <div class="testimonial-section section pb-80 pb-lg-60 pb-md-50 pb-sm-40 pb-xs-40">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="testimonial-wrap bg-gray-two pt-45 pb-30">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-12">
+                                <div class="testimonial-wrapper section-space--inner">
+                                    <div class="testimonial-slider-content">
+                                        <div class="item">
+                                            <div class="row align-items-center">
+                                                <div class="col-md-5">
+                                                    <div class="testimonial-image">
+                                                        <img src="./https://demo.hasthemes.com/nelson-preview/nelson/assets/images/testimonial/testimonial-2.png"
+                                                            alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-7">
+                                                    <div class="testimonial testimonial-style-2 gutter-item">
+                                                        <div class="testimonial-inner">
+                                                            <div class="testimonial-author">
+                                                                <div class="author-thumb">
+                                                                    <img src="https://demo.hasthemes.com/nelson-preview/nelson/assets/images/author/author-1.png"
+                                                                        alt="">
+                                                                </div>
+                                                                <div class="author-info">
+                                                                    <h4>Zeniyea Henderson</h4>
+                                                                    <span>CTO & CO Founder, Axels</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="testimonial-description">
+                                                                <blockquote class="testimonials-text">
+                                                                    <p>“I am very much happy to buy product from
+                                                                        nelson,
+                                                                        the provide the best quality of product.
+                                                                        Product
+                                                                        quality is very satisfactory. Also the
+                                                                        creative
+                                                                        design of their Furniture make me happy.”
+                                                                    </p>
+                                                                </blockquote>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="row align-items-center">
+                                                <div class="col-md-5">
+                                                    <div class="testimonial-image">
+                                                        <img src="./https://demo.hasthemes.com/nelson-preview/nelson/assets/images/testimonial/testimonial-1.png"
+                                                            alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-7">
+                                                    <div class="testimonial testimonial-style-2 gutter-item">
+                                                        <div class="testimonial-inner">
+                                                            <div class="testimonial-author">
+                                                                <div class="author-thumb">
+                                                                    <img src="https://demo.hasthemes.com/nelson-preview/nelson/assets/images/author/author-1.png"
+                                                                        alt="">
+                                                                </div>
+                                                                <div class="author-info">
+                                                                    <h4>Zeniyea Henderson</h4>
+                                                                    <span>CTO & CO Founder, Axels</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="testimonial-description">
+                                                                <blockquote class="testimonials-text">
+                                                                    <p>“I am very much happy to buy product from
+                                                                        nelson,
+                                                                        the provide the best quality of product.
+                                                                        Product
+                                                                        quality is very satisfactory. Also the
+                                                                        creative
+                                                                        design of their Furniture make me happy.”
+                                                                    </p>
+                                                                </blockquote>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial Area End -->
+
+
+
+    <!--Brand section start-->
+    <div class="brand-section section pb-100 pb-lg-80 pb-md-70 pb-sm-60 pb-xs-50">
+        <div class="container">
+            <div class="row">
+                <div class="brand-slider section">
+                    <div class="col">
+                        <!-- Single Brand Start -->
+                        <div class="single-brand">
+                            <div class="brand-image">
+                                <img src="https://demo.hasthemes.com/nelson-preview/nelson/assets/images/brands/brand-1.png"
+                                    alt="">
+                            </div>
+                        </div>
+                        <!-- Single Brand End -->
+                    </div>
+                    <div class="col">
+                        <!-- Single Brand Start -->
+                        <div class="single-brand">
+                            <div class="brand-image">
+                                <img src="https://demo.hasthemes.com/nelson-preview/nelson/assets/images/brands/brand-2.png"
+                                    alt="">
+                            </div>
+                        </div>
+                        <!-- Single Brand End -->
+                    </div>
+                    <div class="col">
+                        <!-- Single Brand Start -->
+                        <div class="single-brand">
+                            <div class="brand-image">
+                                <img src="https://demo.hasthemes.com/nelson-preview/nelson/assets/images/brands/brand-3.png"
+                                    alt="">
+                            </div>
+                        </div>
+                        <!-- Single Brand End -->
+                    </div>
+                    <div class="col">
+                        <!-- Single Brand Start -->
+                        <div class="single-brand">
+                            <div class="brand-image">
+                                <img src="https://demo.hasthemes.com/nelson-preview/nelson/assets/images/brands/brand-4.png"
+                                    alt="">
+                            </div>
+                        </div>
+                        <!-- Single Brand End -->
+                    </div>
+                    <div class="col">
+                        <!-- Single Brand Start -->
+                        <div class="single-brand">
+                            <div class="brand-image">
+                                <img src="https://demo.hasthemes.com/nelson-preview/nelson/assets/images/brands/brand-5.png"
+                                    alt="">
+                            </div>
+                        </div>
+                        <!-- Single Brand End -->
+                    </div>
+                    <div class="col">
+                        <!-- Single Brand Start -->
+                        <div class="single-brand">
+                            <div class="brand-image">
+                                <img src="https://demo.hasthemes.com/nelson-preview/nelson/assets/images/brands/brand-1.png"
+                                    alt="">
+                            </div>
+                        </div>
+                        <!-- Single Brand End -->
+                    </div>
+                    <div class="col">
+                        <!-- Single Brand Start -->
+                        <div class="single-brand">
+                            <div class="brand-image">
+                                <img src="https://demo.hasthemes.com/nelson-preview/nelson/assets/images/brands/brand-2.png"
+                                    alt="">
+                            </div>
+                        </div>
+                        <!-- Single Brand End -->
+                    </div>
+                    <div class="col">
+                        <!-- Single Brand Start -->
+                        <div class="single-brand">
+                            <div class="brand-image">
+                                <img src="https://demo.hasthemes.com/nelson-preview/nelson/assets/images/brands/brand-3.png"
+                                    alt="">
+                            </div>
+                        </div>
+                        <!-- Single Brand End -->
+                    </div>
+                    <div class="col">
+                        <!-- Single Brand Start -->
+                        <div class="single-brand">
+                            <div class="brand-image">
+                                <img src="https://demo.hasthemes.com/nelson-preview/nelson/assets/images/brands/brand-4.png"
+                                    alt="">
+                            </div>
+                        </div>
+                        <!-- Single Brand End -->
+                    </div>
+                    <div class="col">
+                        <!-- Single Brand Start -->
+                        <div class="single-brand">
+                            <div class="brand-image">
+                                <img src="https://demo.hasthemes.com/nelson-preview/nelson/assets/images/brands/brand-5.png"
+                                    alt="">
+                            </div>
+                        </div>
+                        <!-- Single Brand End -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Brand section end-->
+
+    <!-- Newsletter Section Start -->
+    <div
+        class="newsletter-section section bg-gray-two pt-100 pt-lg-80 pt-md-70 pt-sm-60 pt-xs-50 pb-95 pb-lg-75 pb-md-65 pb-sm-60 pb-xs-50">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="newsletter-content">
+                        <h2>Subscribe Our Newsletter</h2>
+                        <p>Subscribe Today for free and save 10% on your first purchase.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="newsletter-wrap">
+                        <div class="newsletter-form">
+                            <form id="mc-form" class="mc-form">
+                                <input type="email" placeholder="Enter Your Email Address Here..." required>
+                                <button type="submit" value="submit">SUBSCRIBE!</button>
+                            </form>
+
+                        </div>
+                        <!-- mailchimp-alerts Start -->
+                        <div class="mailchimp-alerts">
+                            <div class="mailchimp-submitting"></div><!-- mailchimp-submitting end -->
+                            <div class="mailchimp-success"></div><!-- mailchimp-success end -->
+                            <div class="mailchimp-error"></div><!-- mailchimp-error end -->
+                        </div>
+                        <!-- mailchimp-alerts end -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Newsletter Section End -->
+    <!--Footer section start-->
+    <footer class="footer-section section bg-gray">
+
+        <!--Footer Top start-->
+        <div
+            class="footer-top section pt-100 pt-lg-80 pt-md-70 pt-sm-60 pt-xs-50 pb-55 pb-lg-35 pb-md-25 pb-sm-15 pb-xs-10">
+            <div class="container">
+                <div class="row">
+
+                    <!--Footer Widget start-->
+                    <div class="footer-widget col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 mb-40 mb-xs-35">
+                        <h4 class="title"><span class="text">Timmings</span></h4>
+                        <p class="mb-15">New Product: Every Monday</p>
+                        <p class="mb-15">Support: Sun - Mon, 8am - 6pm</p>
+                        <h4 class="opeaning-title">We Work On All The Holidays</h4>
+                    </div>
+                    <!--Footer Widget end-->
+
+
+                    <!--Footer Widget start-->
+                    <div class="footer-widget col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 mb-40 mb-xs-35">
+                        <h4 class="title"><span class="text">Quick Link</span></h4>
+                        <ul class="ft-menu">
+                            <li><a href="#">My account</a></li>
+                            <li><a href="#">Wishlist</a></li>
+                            <li><a href="#">Order Tracking</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Shipping Information</a></li>
+                        </ul>
+                    </div>
+                    <!--Footer Widget end-->
+
+                    <div class="footer-widget col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 mb-40 mb-xs-35">
+                        <h4 class="title"><span class="text">Information</span></h4>
+                        <ul class="ft-menu">
+                            <li><a href="/about">About Us</a></li>
+                            <li><a href="/tnc/#privacy">Privacy Policy</a></li>
+                            <li><a href="/tnc/#conditions">Terms Of Use</a></li>
+                            <li><a href="/tnc/#refunds">Refunds</a></li>
+                        </ul>
+                    </div>
+
+                    <!--Footer Widget start-->
+                    <div
+                        class="footer-widget text-lg-right text-left col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 mb-40 mb-xs-35">
+                        <h2 className="font-a">brownbox.</h2>
+                        <p class="contact-text">mail@brownbox.store</p>
+                        <p class="contact-text">+91 99101 97196</p>
+                        <p class="contact-text">
+                            112, Bazz Shopping Complex <br />
+                            Pocket 8, Sector 24 <br />
+                            Rohini, Delhi - 110085
+                        </p>
+                    </div>
+                    <!--Footer Widget end-->
+                </div>
+            </div>
+        </div>
+        <!--Footer Top end-->
+
+        <!--Footer bottom start-->
+        <div class="footer-bottom section">
+            <div class="container">
+                <div class="row no-gutters">
+                    <div class="col-12 ft-border pt-25 pb-25">
+                        <div class="row justify-content-between align-items-center">
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <div class="copyright text-left">
+                                    <p class="copyright">&copy; 2021 <strong>brownbox.store</strong> Made with <i
+                                            class="fa fa-heart text-danger" aria-hidden="true"></i> by <a
+                                            href="https://hasthemes.com/"><strong>brownbox</strong></a>.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <div class="payment-getway text-lg-right text-center">
+                                    <img src="https://demo.hasthemes.com/nelson-preview/nelson/assets/images/payment.png"
+                                        alt="" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Footer bottom end-->
+
+    </footer>
+    <!--Footer section end-->
+
+    <!-- Placed js at the end of the document so the pages load faster -->
+
+    <!-- All jquery file included here -->
+    <script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="./assets/js/vendor/popper.min.js"></script>
+    <script src="./assets/js/vendor/bootstrap.min.js"></script>
+    <script src="./assets/js/plugins/plugins.js"></script>
+    <script src="./assets/js/main.js"></script>
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-analytics.js"></script>
+
+    <script src="./assets/js/functions/getCollection.js" ></script>
+</body>
+
+</html>
