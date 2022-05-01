@@ -1,0 +1,25 @@
+.projects{
+    display: flex;
+    justify-content: space-between;
+}
+
+.item-name{
+    color: #282828;
+    font-weight: 700;
+}
+
+.item-desc{
+    font-size: 13px;
+    color: rgba(128, 128, 128, 0.775);
+    padding: 10px;
+}
+
+.project-card{
+    padding: 10px;
+    cursor: pointer;
+}
+
+.project-card:hover{
+    box-shadow: 0px 0px 10px rgba(128, 128, 128, 0.349);
+    border-radius: 20px;
+}
