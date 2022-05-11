@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "site": "mobby-park",
+    "public": "build",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

@@ -28,32 +28,113 @@ const data = [
                 id: '2.1.2',
                 title: 'Node 2.1.2'
             },
+            {
+                id: '2.1.3',
+                title: 'Node 2.1.3'
+            },
+            {
+                id: '2.1.4',
+                title: 'Node 2.1.4'
+            },
+            {
+                id: '2.1.5',
+                title: 'Node 2.1.5'
+            },
+            {
+                id: '2.1.6',
+                title: 'Node 2.1.6'
+            },
+            {
+                id: '2.1.7',
+                title: 'Node 2.1.7'
+            },
+            {
+                id: '2.1.8',
+                title: 'Node 2.1.8'
+            },
             ]
         },
         {
             id: '2.2',
             title: 'Node 2.2',
-        }]
-    }
+        },
+        {
+            id: '2.3',
+            title: 'Node 2.3',
+        },
+        {
+            id: '2.4',
+            title: 'Node 2.4',
+        },
+        {
+            id: '2.5',
+            title: 'Node 2.5',
+        },
+        {
+            id: '2.6',
+            title: 'Node 2.6',
+        }
+    ]
+    },
+    {
+        id: '3',
+        title: 'Node 3',
+        children: [{
+            id: '3.1',
+            title: 'Node 3.1',
+        },
+        {
+            id: '3.2',
+            title: 'Node 3.2',
+        },
+        {
+            id: '3.3',
+            title: 'Node 3.3',
+        },
+        {
+            id: '3.4',
+            title: 'Node 3.4',
+        },
+        {
+            id: '3.5',
+            title: 'Node 3.5',
+        },
+        {
+            id: '3.6',
+            title: 'Node 3.6',
+        }
+    ]
+    },
 ]
 
 class Task2 extends Component {
 
     state = {
         hovered_index_parent: null,
-        hovered_index_child: null
+        hovered_index_child: null,
+        collapse: ["content", "content", "content"]
     }
 
     setHoveredIndeces = (parent_index, child_index) => {
-        this.setState({hovered_index_parent:parent_index});
-        if(child_index){
-            this.setState({hovered_index_child:child_index});
+        this.setState({ hovered_index_parent: parent_index });
+        this.setState({ hovered_index_child: child_index });
+    }
+
+    setActive = (index, sub_index) => {
+        var temp = this.state.collapse;
+        if(temp[index] == "active"){
+            temp[index] = "content";
+            this.setState({collapse:temp});
+        }
+        else if(temp[index] == "content"){
+            temp[index] = "active";
+            this.setState({collapse:temp});
         }
     }
 
     reset = () => {
-        this.setState({hovered_index_parent:null});
-        this.setState({hovered_index_child:null});
+        this.setState({ hovered_index_parent: null });
+        this.setState({ hovered_index_child: null });
     }
 
     render() {
@@ -63,26 +144,32 @@ class Task2 extends Component {
                     {
                         data.map((item, index) => {
                             return (
-                                <li key={index} >
+                                <li key={index} onClick={()=>{this.setActive(index,null)}} >
                                     {
                                         this.state.hovered_index_parent === index ? (
                                             <span className="hovered" >{item.title}</span>
-                                        ): (
+                                        ) : (
                                             <span>{item.title}</span>
                                         )
                                     }
-                                    
-                                    <ul>
+
+                                    <ul className={this.state.collapse[index]+" trans"} >
                                         {item.children.map((child_item, child_index) => {
                                             return (
-                                                <li key={child_index} onMouseEnter={()=>{this.setHoveredIndeces(index,null)}} onMouseLeave={this.reset} >
-                                                    <span>{child_item.title}</span>
+                                                <li key={child_index} onMouseEnter={() => { this.setHoveredIndeces(index, null) }} onMouseLeave={this.reset} >
+                                                    {
+                                                        this.state.hovered_index_child === child_index && this.state.hovered_index_parent === index ? (
+                                                            <span className="hovered" >{child_item.title}</span>
+                                                        ) : (
+                                                            <span>{child_item.title}</span>
+                                                        )
+                                                    }
                                                     <ul>
                                                         {
                                                             child_item.children &&
                                                             child_item.children.map((sub_child, sub_child_index) => {
                                                                 return (
-                                                                    <li key={sub_child_index}  >
+                                                                    <li key={sub_child_index} onMouseEnter={() => { this.setHoveredIndeces(index, child_index) }} onMouseLeave={this.reset}  >
                                                                         <span>{sub_child.title}</span>
                                                                     </li>
                                                                 )
