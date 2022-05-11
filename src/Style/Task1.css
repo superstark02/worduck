@@ -1,0 +1,137 @@
+.app-bar {
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.heading {
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.info{
+    font-size: 12px;
+    margin: 10px
+}
+
+.shuffle {
+    background-color: #d0dce6;
+    padding: 5px 10px;
+    border-radius: 8px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.carousel {
+    display: flex;
+    gap: 50px;
+    padding: 30px;
+    width: auto;
+    overflow: scroll;
+    margin-bottom: 10px;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.card {
+    min-width: 300px;
+    height: 300px;
+    border-radius: 15px;
+    position: relative;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.21);
+    background-position: center;
+    background-size: cover;
+    animation-fill-mode: forwards;
+    transition: 1s;
+}
+
+
+@keyframes move-left {
+    0% {
+        right: 0px;
+        top: 0px;
+    }
+
+    100% {
+        right: 100px;
+        top: 0px;
+    }
+}
+
+.card-bottom {
+    position: absolute;
+    bottom: 0;
+    width: 280px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.284));
+    border-radius: 10px;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: black;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #cc7aba;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.name {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.likes {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.search {
+    border: none;
+    padding: 10px;
+    width: 500px;
+    border-radius: 10px;
+    outline: none;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.092);
+}
+
+.btn {
+    border: none;
+    color: inherit;
+    background-color: #d0dce6;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.092);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn:hover {
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.092);
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}

@@ -1,0 +1,31 @@
+.border{
+    border-left: solid 2px #b71c1c;
+    padding-right: left;
+}
+
+.container{
+    padding: 20px;
+}
+
+li{
+    background-color: #ef9a9a3d;
+    width: fit-content;
+    border-radius: 5px;
+    margin: 5px 0px;
+    color: #b71c1c;
+    padding: 5px;
+    cursor: pointer;
+}
+
+span{
+    padding: 5px;
+    border-radius: 5px;
+}
+
+span:hover{
+    background-color: #ef9a9ac3;
+}
+
+.hovered{
+    background-color: #ef9a9ac3;
+}
