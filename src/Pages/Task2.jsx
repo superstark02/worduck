@@ -185,6 +185,15 @@ class Task2 extends Component {
                         })
                     }
                 </ul>
+
+                <div>
+                    <p className='info' >  
+                        Has indented nested nodes
+                    </p>
+                    <p className='info' >  
+                        Highlights all parents of a child when it's hovered over
+                    </p>
+                </div>
             </div>
         );
     }
