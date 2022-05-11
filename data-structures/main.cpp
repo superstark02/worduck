@@ -1,36 +1,38 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-void solution(int N, vector<int> arr)
+int binarySearch(vector<int> nums, int target, int L, int R, bool left_bias)
 {
-    for (int i = N - 1; i > 0; i--)
-    {
-        if (arr[N - 1] > arr[i])
-        {
-            int temp = arr[i];
-            arr[i] = arr[N - 1];
-            arr[N - 1] = temp;
-
-            sort(arr.begin() + i + 1, arr.end());
-
-            for (int i = 0; i < arr.size(); i++)
-            {
-                cout << arr[i] << " ";
+    int i = -1;
+    while(L<=R){
+        int M = (L + R) / 2;
+        
+        if(nums[M] == target){
+            //return M;
+            i = M;
+            if(left_bias){
+                R = M-1;
             }
+            else{
+                L = M+1;
+            }
+        }
+        else if(nums[M] < target){
+            L = M + 1;
+        }
+        else if(nums[M] > target){
+            R = M - 1;
         }
     }
 
-    reverse(arr.begin(), arr.end());
-
-    for (int i = 0; i < arr.size(); i++)
-    {
-        cout << arr[i] << " ";
-    }
+    return i;
 }
 
 int main()
 {
-    vector<int> v = {1, 4, 3, 2};
-    solution(v.size(), v);
+    vector<int> nums = {5, 7, 7, 8, 8, 10};
+    int start = binarySearch(nums, 8, 0, nums.size() - 1, true);
+    int end = binarySearch(nums, 8, 0, nums.size() - 1, false);
+    cout << start << " " << end;
     return 0;
 }

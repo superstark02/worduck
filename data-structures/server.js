@@ -1,20 +1,28 @@
-function solution(s) {
-    var a = [];
-    var count0 = 0, count1 = 0;
-    var cnt = 0;
-
-    for (let i = 0; i < s.length; i++) {
-        if(s[i]==="1"){
-            count1++;
+var generateParenthesis = function(n) {
+    var ans = "";
+    var temp_string = "";
+    
+    for(let i = 0; i < n; i++){
+        temp_string = "";
+        
+        for(let j = 0; j < n-i; j++){
+            temp_string = temp_string + '(';
         }
-        else if(s[i] === "0"){
-            count0++;
+        for(let j = 0; j < temp_string.length; j++){
+            temp_string = temp_string + ')';
         }
-        if(count0 === count1){
-            cnt++;
+        for(let j = 0; j < (n-temp_string.length)/2; j++){
+            temp_string = temp_string + "()";
+        }
+        
+        ans.push(temp_string);
+        if(temp_string !== temp_string.reverse()){
+            ans.push(temp_string.reverse());
         }
     }
-    console.log(cnt)
-}
+    
+    return ans;
+    
+};
 
-solution("0111100010");
+console.log(generateParenthesis(3));
