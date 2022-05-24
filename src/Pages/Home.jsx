@@ -27,7 +27,7 @@ function App() {
     )
 
 
-    /*crating order
+    /*
     const created_order = await fetch(base_url+'/v2/create-order', {
       method: 'POST',
       body: JSON.stringify({
@@ -60,6 +60,7 @@ function App() {
       t.json()
     )*/
 
+    //creating order
     let send_data = {
       token: data.token
     }
