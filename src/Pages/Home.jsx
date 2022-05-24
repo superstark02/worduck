@@ -15,8 +15,10 @@ function loadScript(src) {
 }
 
 function App() {
+  var base_url = 'https://api.nimbbl.tech/api';
   async function postData() {
-    const data = await fetch('https://api.nimbbl.tech/api/v2/generate-token', {
+    //generating token ( auth )
+    const data = await fetch(base_url + '/v2/generate-token', {
       method: 'POST',
       body: JSON.stringify({ "access_key": "access_key_x1DveRbWzVmWW3KB", "access_secret": "access_secret_1DvejDD1MqoWW3KB" }),
       headers: { 'Content-Type': 'application/json' }
@@ -24,7 +26,9 @@ function App() {
       t.json()
     )
 
-    const created_order = await fetch('https://api.nimbbl.tech/api/v2/create-order', {
+
+    /*crating order
+    const created_order = await fetch(base_url+'/v2/create-order', {
       method: 'POST',
       body: JSON.stringify({
         "amount_before_tax": 4,
@@ -54,14 +58,32 @@ function App() {
       },
     }).then((t) =>
       t.json()
+    )*/
+
+    let send_data = {
+      token: data.token
+    }
+    const created_order = await fetch('http://localhost:1337/nimbble', {
+      method: 'POST',
+      body: JSON.stringify(send_data),
+      headers: {
+        'Content-Type': 'application/json'
+      },
+    }).then((t) =>
+      t.json()
     )
 
+    console.log(created_order)
+
+
+    //loading Nimbbl script
     const res = await loadScript('https://api.nimbbl.tech/static/assets/js/checkout.js')
     if (!res) {
       alert('SDK failed to load. Are you online?')
       return
     }
 
+    //invoking checkout
     var options = {
       "access_key": "access_key_x1DveRbWzVmWW3KB", // Enter the Key ID generated from the Dashboard
       "order_id": created_order.order_id, // Enter the order_id from the create-order api
