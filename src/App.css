@@ -2,3 +2,11 @@ body{
     background-color: #f5f8fb;
     color: #166d88;
 }
+
+.card{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
