@@ -20,7 +20,7 @@ app.post('/nimbble', async (req, res) => {
         body: JSON.stringify({
             "amount_before_tax": 4,
             "currency": "INR",
-            "invoice_id": "BrQv9nkxDEqWR3zg1122222",
+            "invoice_id": "BrQv9Abc3457111132",
             "tax": 0,
             "user": {
                 "mobile_number": "9999999999",

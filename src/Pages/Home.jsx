@@ -20,7 +20,7 @@ function App() {
     //generating token ( auth )
     const data = await fetch(base_url + '/v2/generate-token', {
       method: 'POST',
-      body: JSON.stringify({ "access_key": "access_key_x1DveRbWzVmWW3KB", "access_secret": "access_secret_1DvejDD1MqoWW3KB" }),
+      body: JSON.stringify({ "access_key": "access_key_RoQ7ZpRnDWepL3rg", "access_secret": "access_secret_O1x7brObg8AGB7kJ" }),
       headers: { 'Content-Type': 'application/json' }
     }).then((t) =>
       t.json()
@@ -74,8 +74,6 @@ function App() {
       t.json()
     )
 
-    console.log(created_order)
-
 
     //loading Nimbbl script
     const res = await loadScript('https://api.nimbbl.tech/static/assets/js/checkout.js')
@@ -86,22 +84,23 @@ function App() {
 
     //invoking checkout
     var options = {
-      "access_key": "access_key_x1DveRbWzVmWW3KB", // Enter the Key ID generated from the Dashboard
+      "access_key": "access_key_RoQ7ZpRnDWepL3rg", // Enter the Key ID generated from the Dashboard
       "order_id": created_order.order_id, // Enter the order_id from the create-order api
       "callback_handler": function (response) {
-        console.log(response.nimbbl_transaction_id);
+        /*console.log(response.nimbbl_transaction_id);
         console.log(response.nimbbl_order_id);
-        console.log(response.nimbbl_signature);
+        console.log(response.nimbbl_signature);*/
         console.log(response.status);
-      },
-      "custom": {
-        "key_1": "val_1",
-        "key_2": "val_2"
+        if(response.status){
+          alert("Payment Done")
+        }
       },
     };
 
     const paymentObject = new window.NimbblCheckout(options)
-    paymentObject.open(created_order.order_id)
+    paymentObject.open(created_order.order_id).then(s=>{
+      console.log(s)
+    })
   }
 
   return (
